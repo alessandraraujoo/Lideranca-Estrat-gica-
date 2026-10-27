@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mentoria Líder Estratégica | 8 encontros individuais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FBF6F8;--surf:#fff;--ink:#241322;--mut:#6B5868;--plum:#5B2147;--plum2:#3D1230;--gold:#C99A3B;--line:#E9DCE4;--ontint:#F6EAF1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A0E18;--surf:#26152A;--ink:#F6ECF2;--mut:#BBA6B5;--plum:#D58AB8;--plum2:#2E1230;--line:#42263F;--ontint:#2B1829}}
+:root[data-theme="dark"]{--bg:#1A0E18;--surf:#26152A;--ink:#F6ECF2;--mut:#BBA6B5;--plum:#D58AB8;--plum2:#2E1230;--line:#42263F;--ontint:#2B1829}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(2.2rem,7vw,3.8rem)}h2{font-size:clamp(1.7rem,4.6vw,2.5rem)}h3{font-size:1.2rem}
+p{margin:0 0 1em}.w{max-width:760px;margin:0 auto;padding:64px 22px}.c{text-align:center}
+.hero{background:linear-gradient(160deg,#2E0F26,#5B2147);color:#fff}
+.hero .w{padding-top:72px;padding-bottom:72px}
+.hero p{color:#EBD9E5;font-size:1.12rem}.tag{display:inline-block;border:1px solid #C99A3B;color:#E8C57A;border-radius:99px;padding:4px 14px;font-size:.9rem;margin-bottom:22px}
+.btn{display:inline-block;background:var(--gold);color:#2A1500;font-weight:700;text-decoration:none;padding:16px 30px;border-radius:12px;font-size:1.05rem}
+.btn:hover{filter:brightness(1.08)}.btn:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px var(--plum)}
+.sm{font-size:.9rem;color:var(--mut)}.hero .sm{color:#CDB3C4;margin-top:14px}
+ul.x{list-style:none;padding:0;margin:0 0 1.2em}ul.x li{padding:9px 0 9px 32px;position:relative;border-bottom:1px solid var(--line)}
+ul.x li:before{content:"✕";position:absolute;left:0;color:#B3365A;font-weight:700}
+ul.ok li:before{content:"✓";color:var(--plum)}
+.band{background:var(--ontint)}.pull{font-family:Fraunces,Georgia,serif;font-size:1.35rem;line-height:1.4;border-left:4px solid var(--gold);padding-left:18px;margin:1.4em 0}
+details{background:var(--surf);border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+summary{cursor:pointer;padding:18px 20px;list-style:none;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.12rem;display:flex;gap:14px;align-items:baseline}
+summary::-webkit-details-marker{display:none}summary:after{content:"+";margin-left:auto;color:var(--plum);font-size:1.5rem;line-height:1}
+details[open] summary:after{content:"–"}summary b{color:var(--gold);font-size:1.3rem}
+.in{padding:0 20px 20px}.dor{font-style:italic;color:var(--mut);margin-bottom:.8em}
+.in ul{margin:0 0 .9em;padding-left:20px}.in li{margin:4px 0}.pr{background:var(--ontint);border-radius:10px;padding:12px 14px;font-size:.95rem;margin:0 0 8px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.k{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:18px}.k h3{font-size:1.05rem;margin-bottom:.3em}.k p{margin:0;font-size:.95rem;color:var(--mut)}
+.st{display:grid;gap:12px;margin:0;padding:0;list-style:none}.st li{display:flex;gap:14px;background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:16px}
+.st b{font-family:Fraunces,serif;color:var(--gold);font-size:1.6rem;line-height:1}
+.buy{background:var(--plum2);color:#fff}.buy .w{padding-top:72px}
+.box{background:#fff;color:#241322;border-radius:20px;padding:30px 24px;text-align:center;border:2px solid var(--gold)}
+.box .row{display:flex;justify-content:space-between;gap:12px;text-align:left;border-bottom:1px solid #E9DCE4;padding:10px 0;font-size:.98rem}
+.old{color:#6B5868;text-decoration:line-through;margin:18px 0 0}.price{font-family:Fraunces,serif;font-size:3.4rem;font-weight:700;color:#5B2147;line-height:1.1}
+.box .btn{width:100%;margin-top:14px}.g{margin-top:26px;color:#EBD9E5}
+.who{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.av{width:84px;height:84px;border-radius:50%;background:var(--plum);color:#fff;display:grid;place-items:center;font-family:Fraunces,serif;font-size:1.9rem;flex:none}
+footer{padding:28px 22px 96px;text-align:center;color:var(--mut);font-size:.85rem}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:none;z-index:5}
+.bar .btn{display:block;text-align:center;padding:14px}
+@media(max-width:700px){.bar{display:block}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="w c">
+<span class="tag">Mentoria individual · 8 encontros ao vivo</span>
+<h1>Líder Estratégica</h1>
+<p style="font-size:1.3rem;color:#fff">Pare de apagar incêndios e comece a conduzir a sua equipe com clareza, firmeza e método.</p>
+<p>Para mulheres empreendedoras que já lideram equipes e querem aprender a cobrar, dar feedback, delegar e resolver conflitos sem culpa, sem gritar e sem fazer tudo sozinhas.</p>
+<a class="btn" href="#investimento">Quero garantir minha vaga</a>
+<p class="sm">Vagas limitadas · acompanhamento 100% individual</p>
+</div></header>
+
+<section class="w">
+<h2>Você reconhece essa rotina?</h2>
+<ul class="x">
+<li>“Eu sou responsável por tudo, mas não sinto que tenho controle sobre minha equipe.”</li>
+<li>“Eu sei o que preciso falar, mas tenho medo de como a pessoa vai reagir.”</li>
+<li>“Minha funcionária comete o mesmo erro e eu não sei mais como falar.”</li>
+<li>“Eu cobro, cobro, e as coisas continuam sem ser feitas como deveriam.”</li>
+<li>“Se eu não fizer ou conferir tudo, nada funciona.”</li>
+<li>“Passo o dia apagando incêndios e não consigo pensar no negócio.”</li>
+</ul>
+<p class="pull">Isso não é falta de capacidade. É liderança sem método, e método se aprende.</p>
+<p>Você abriu um negócio, contratou pessoas e virou líder sem ninguém te ensinar como. Agora carrega a equipe nas costas, se cobra por não saber lidar com pessoas e sente culpa até quando só pede o que é combinado.</p>
+</section>
+
+<section class="band"><div class="w">
+<h2>O que muda quando você aprende a conduzir</h2>
+<ul class="x ok">
+<li>Cobra resultados com clareza, sem peso emocional e sem climão</li>
+<li>Faz conversas difíceis e dá feedback que realmente orienta a mudança</li>
+<li>Delega de verdade e para de refazer o trabalho da equipe</li>
+<li>Enfrenta conflitos e descumprimentos antes que virem crise</li>
+<li>Ganha uma rotina de gestão e deixa de viver no improviso</li>
+<li>Sai com um plano de liderança de 30 dias para continuar evoluindo</li>
+</ul>
+<p>Sem autoritarismo. Sem dureza. Sem virar outra pessoa.</p>
+</div></section>
+
+<section class="w">
+<h2>Os 8 encontros: o que você vai viver</h2>
+<p>Toque em cada encontro para ver o conteúdo, a prática e a tarefa de aplicação.</p>
+
+<details open><summary><b>1</b> Raio-X da Sua Liderança</summary><div class="in">
+<p class="dor">“Eu sou responsável por tudo, mas não sinto que tenho controle.”</p>
+<ul><li>A diferença entre executar, gerenciar e liderar</li><li>Responsabilidades e limites do seu papel</li><li>Comportamentos que enfraquecem a sua autoridade</li><li>Onde você trava: cobrança, decisões e delegação</li></ul>
+<p class="pr"><strong>Prática:</strong> diagnóstico de liderança com situações reais do seu negócio.</p>
+<p class="pr"><strong>Entre encontros:</strong> observar 3 situações difíceis e registrar como reagiu e como gostaria de ter agido.</p></div></details>
+
+<details><summary><b>2</b> Conversas Difíceis sem Medo</summary><div class="in">
+<p class="dor">“Eu sei o que falar, mas tenho medo da reação.”</p>
+<ul><li>Comunicação clara e objetiva</li><li>Como expressar expectativas sem agressividade</li><li>Como dizer não e impor limites profissionais</li><li>Fim das indiretas, ameaças e comunicação passivo-agressiva</li><li>Escutar sem perder o objetivo da conversa</li></ul>
+<p class="pr"><strong>Prática:</strong> simulação de conversa com uma funcionária que descumpriu um combinado.</p>
+<p class="pr"><strong>Entre encontros:</strong> conduzir uma conversa real com o roteiro construído na sessão.</p></div></details>
+
+<details><summary><b>3</b> Feedback que Transforma</summary><div class="in">
+<p class="dor">“Ela comete o mesmo erro e eu não sei mais como falar.”</p>
+<ul><li>Feedback, crítica, bronca e orientação: a diferença</li><li>Como preparar a conversa e descrever comportamentos sem rotular a pessoa</li><li>Como lidar com justificativas, silêncio e resistência</li><li>Como combinar próximos passos e acompanhar a mudança</li></ul>
+<p class="pr"><strong>Prática:</strong> 3 simulações: erro recorrente, reconhecimento de bom desempenho e correção de comportamento.</p>
+<p class="pr"><strong>Entre encontros:</strong> realizar um feedback real e registrar o acordo e a data de acompanhamento.</p></div></details>
+
+<details><summary><b>4</b> Cobrança que Gera Resultado</summary><div class="in">
+<p class="dor">“Eu cobro, cobro, e nada é feito como deveria.”</p>
+<ul><li>Como transformar expectativa vaga em entrega clara</li><li>Responsabilidades, prazos e padrões de qualidade</li><li>Acompanhar sem microgerenciar</li><li>Como agir diante de atrasos e falhas recorrentes</li><li>Falta de clareza, de capacidade ou descumprimento? Saiba diferenciar</li></ul>
+<p class="pr"><strong>Prática:</strong> plano de desempenho para um caso real, com tarefa, responsável, prazo e acompanhamento.</p>
+<p class="pr"><strong>Entre encontros:</strong> aplicar o acordo de desempenho e checar se foi compreendido e cumprido.</p></div></details>
+
+<details><summary><b>5</b> Delegue e Liberte-se</summary><div class="in">
+<p class="dor">“Se eu não fizer ou conferir tudo, nada funciona.”</p>
+<ul><li>Por que você centraliza tarefas e decisões</li><li>O que delegar, para quem e com que nível de autonomia</li><li>Pontos de acompanhamento e como orientar quem ainda não domina a tarefa</li><li>Como parar de refazer o trabalho dos outros</li></ul>
+<p class="pr"><strong>Prática:</strong> matriz de delegação com atividades, responsáveis, autonomia e pontos de controle.</p>
+<p class="pr"><strong>Entre encontros:</strong> delegar uma atividade que você costuma centralizar e avaliar o resultado.</p></div></details>
+
+<details><summary><b>6</b> Conflitos sob Controle</summary><div class="in">
+<p class="dor">“Tenho medo de enfrentar conflitos e piorar o ambiente.”</p>
+<ul><li>Como identificar conflitos antes que se agravem</li><li>Como mediar divergências na equipe</li><li>Desrespeito, resistência e combinados descumpridos</li><li>Critérios consistentes, sem favoritismo</li><li>Separar fatos, interpretações e emoções</li></ul>
+<p class="pr"><strong>Prática:</strong> estudo de caso com duas funcionárias em conflito ou uma profissional que contesta os combinados.</p>
+<p class="pr"><strong>Entre encontros:</strong> elaborar um plano de condução para um conflito real ou simulado.</p></div></details>
+
+<details><summary><b>7</b> Rotina de Líder Estratégica</summary><div class="in">
+<p class="dor">“Passo o dia apagando incêndios.”</p>
+<ul><li>Como estruturar sua rotina de liderança</li><li>Reuniões rápidas e produtivas, sem excesso de alinhamentos</li><li>Prioridades, responsabilidades e indicadores que importam</li><li>Como encontrar gargalos e equilibrar operação e gestão de pessoas</li></ul>
+<p class="pr"><strong>Prática:</strong> criação da sua rotina semanal de gestão.</p>
+<p class="pr"><strong>Entre encontros:</strong> testar a rotina e ajustá-la à realidade do seu negócio.</p></div></details>
+
+<details><summary><b>8</b> Liderança Consolidada: Seu Plano de Evolução</summary><div class="in">
+<p class="dor">“Eu aprendo, mas não consigo manter a mudança na rotina.”</p>
+<ul><li>Revisão do diagnóstico inicial e dos seus avanços</li><li>Seus padrões pessoais de comunicação, cobrança e delegação</li><li>Critérios para acompanhar a evolução da equipe</li><li>Plano de continuidade do seu desenvolvimento</li></ul>
+<p class="pr"><strong>Prática:</strong> seu plano de liderança de 30 dias, com ações, prazos, indicadores e compromissos.</p>
+<p class="pr"><strong>Resultado:</strong> você termina com um plano individual e ferramentas para seguir sozinha.</p></div></details>
+</section>
+
+<section class="band"><div class="w">
+<h2>Seu kit de ferramentas</h2>
+<p>Materiais para consultar e usar entre os encontros e depois da mentoria.</p>
+<div class="grid">
+<div class="k"><h3>Raio-X da Liderança</h3><p>Diagnóstico dos seus desafios e prioridades.</p></div>
+<div class="k"><h3>Guia de Comunicação Assertiva</h3><p>Frases e roteiros prontos para cobranças e conversas difíceis.</p></div>
+<div class="k"><h3>Manual Prático de Feedback</h3><p>Preparação, condução, acordos e acompanhamento.</p></div>
+<div class="k"><h3>Checklist de Desempenho</h3><p>Tarefas, prazos, padrões e acompanhamento.</p></div>
+<div class="k"><h3>Matriz de Delegação</h3><p>Responsabilidades, autonomia e pontos de controle.</p></div>
+<div class="k"><h3>Roteiro para Conflitos</h3><p>Perguntas e etapas para conduzir divergências.</p></div>
+<div class="k"><h3>Planejamento Semanal</h3><p>Modelo de rotina para prioridades e reuniões.</p></div>
+<div class="k"><h3>Plano de Liderança de 30 Dias</h3><p>Ações e indicadores para dar continuidade.</p></div>
+</div></div></section>
+
+<section class="w">
+<h2>Como cada encontro funciona</h2>
+<p>Sessões individuais ao vivo de 60 a 75 minutos, adaptadas à sua realidade. Você não assiste aula: pratica com o seu caso.</p>
+<ol class="st">
+<li><b>1</b><span><strong>Revisão da aplicação.</strong> O que funcionou e o que travou desde o último encontro.</span></li>
+<li><b>2</b><span><strong>Análise de uma situação real</strong> vivida por você na sua equipe.</span></li>
+<li><b>3</b><span><strong>Desenvolvimento da habilidade</strong> com uma abordagem feita para o seu caso.</span></li>
+<li><b>4</b><span><strong>Simulação ou exercício:</strong> você pratica a conversa, o plano ou a decisão.</span></li>
+<li><b>5</b><span><strong>Plano de ação:</strong> o que aplicar, quando e como acompanhar.</span></li>
+</ol>
+</section>
+
+<section class="buy" id="investimento"><div class="w c">
+<h2>Seu investimento</h2>
+<p style="color:#EBD9E5">Um acompanhamento profundo, prático e personalizado, do diagnóstico ao plano de 30 dias.</p>
+<div class="box">
+<div class="row"><span>8 encontros individuais ao vivo</span><strong>incluído</strong></div>
+<div class="row"><span>Kit com 8 ferramentas e roteiros</span><strong>incluído</strong></div>
+<div class="row"><span>Tarefas de aplicação entre encontros</span><strong>incluído</strong></div>
+<div class="row"><span>Plano individual de liderança de 30 dias</span><strong>incluído</strong></div>
+<p class="old">De R$ 2.400 por</p>
+<div class="price">R$ 1.297</div>
+<p class="sm">Investimento total · pagamento seguro</p>
+<a class="btn" href="https://wa.me/5568981178306?text=Quero%20garantir%20minha%20vaga%20na%20Mentoria%20L%C3%ADder%20Estrat%C3%A9gica" id="cta">Quero garantir minha vaga</a>
+<p class="sm" style="margin:14px 0 0">Vagas limitadas, porque o acompanhamento é individual.</p>
+</div>
+<p class="g"><strong>Garantia de 7 dias.</strong> Se nesse período você sentir que a mentoria não faz sentido para o seu momento, peça o reembolso. Sem constrangimento.</p>
+</div></section>
+
+<section class="w">
+<h2>Quem conduz</h2>
+<div class="who"><div class="av">AA</div><div style="flex:1;min-width:230px"><h3 style="margin:0">Alessandra Araújo</h3><p class="sm" style="margin:0">Administradora · pós em Liderança e Coaching · pós em Marketing, Estratégia e Inovação</p></div></div>
+<p style="margin-top:20px">Ao longo da sua trajetória, Alessandra percebeu que o maior bloqueio de mulheres líderes não é falta de conhecimento, e sim excesso de pensamento, insegurança na decisão e dificuldade de se posicionar.</p>
+<p>Por isso o trabalho dela vai além da teoria: une liderança emocional, comunicação estratégica e mentalidade de decisão para que você exerça uma liderança respeitada, sem endurecer e sem agradar o tempo todo.</p>
+<p class="pull">Aqui não existe motivação vazia. Existe postura, clareza e direção.</p>
+</section>
+
+<section class="band"><div class="w">
+<h2>Perguntas frequentes</h2>
+<details><summary>Para quem é a mentoria?</summary><div class="in"><p>Para mulheres empreendedoras que já lideram equipes e querem aprender a conduzir pessoas, cobrar resultados e dar feedback com segurança.</p></div></details>
+<details><summary>Como são os encontros?</summary><div class="in"><p>Individuais, ao vivo, de 60 a 75 minutos, com tarefas práticas entre uma sessão e outra.</p></div></details>
+<details><summary>Qual a diferença para a mentoria Postura de Líder?</summary><div class="in"><p>A Postura de Líder (4 encontros) trabalha principalmente a sua postura. A Líder Estratégica (8 encontros) vai além: ferramentas, simulações e rotina para conduzir a equipe na prática.</p></div></details>
+<details><summary>A mentoria garante resultados?</summary><div class="in"><p>Ela entrega processo: desenvolvimento de habilidades, exercícios, aplicação prática e acompanhamento. Os resultados dependem da sua aplicação e da realidade do seu negócio. Questões trabalhistas, jurídicas ou clínicas exigem profissionais específicos.</p></div></details>
+</div></section>
+
+<section class="hero"><div class="w c">
+<h2>Você não precisa ser uma líder mais dura. Precisa ser uma líder mais clara.</h2>
+<a class="btn" href="#investimento">Quero ser Líder Estratégica</a>
+</div></section>
+
+<footer>© 2026 Líder Estratégica · Mentoria individual para mulheres líderes</footer>
+<div class="bar"><a class="btn" href="#investimento">Quero garantir minha vaga</a></div>
+</body>
+</html>
